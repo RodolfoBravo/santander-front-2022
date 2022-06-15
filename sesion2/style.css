@@ -1,0 +1,22 @@
+.header {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .logo {
+    width: 15%;
+  }
+  
+  .navbar {
+    width: 70%;
+  }
+  
+  .actions {
+    width: 15%;
+  }
