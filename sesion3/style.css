@@ -1,0 +1,103 @@
+body {
+  background-color: #13488e;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+strong {
+  color: #8b8b8bcc;
+  font-size: 24px;
+}
+
+form {
+  justify-content: center; 
+
+}
+
+button {
+  background-color: #025157;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+}
+
+.header {
+  margin-top: 40px 20px 0;
+  font-size: 0;
+  height: 45px;
+}
+
+.header > * {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 45px;
+}
+
+li {
+  display: inline;
+  margin: 0 25px 0;
+  color: #025157;
+}
+
+.logo>img {
+  width: 15%;
+}
+
+.logo {
+  width: 15%;
+}
+
+.navbar {
+  width: 70%;
+  text-align: center;
+  color: #025157;
+  font-weight: 500;
+  font-family: sans-serif;
+  
+}
+
+.actions {
+  width: 15%;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.actions a {
+  color: #67b54b;
+}
+
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.main {
+  margin-top: 140px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+.actions button {
+  color: fff;
+  background: #67b54b;
+  padding: 14px 12px;
+  border-radius: 5px;
+  border-style: none;
+}
