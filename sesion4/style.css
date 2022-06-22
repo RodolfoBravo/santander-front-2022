@@ -258,3 +258,8 @@ li {
   margin:15px auto;
   display:block;
 }
+
+.features {
+  display: grid;
+  grid-template-columns: 300px 300px;
+}
