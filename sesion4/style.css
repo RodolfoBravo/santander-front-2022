@@ -23,7 +23,7 @@ strong {
 
 form {
   display: flex;
-  
+
 
 }
 
@@ -32,12 +32,13 @@ form button {
   color: #fff;
   width: 15rem;
   height: 3rem;
-  border-radius: 0 10px 10px 0; 
+  border-radius: 0 10px 10px 0;
   border-color: rgb(161, 161, 161);
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
+
 form input {
-  border-radius: 10px 0 0 10px; 
+  border-radius: 10px 0 0 10px;
   border-color: rgb(173, 170, 170);
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
@@ -46,10 +47,10 @@ form input {
   margin-top: 40px 20px 0;
   font-size: 0;
   height: 45px;
-  
+
 }
 
-.header > * {
+.header>* {
   display: inline-block;
   font-size: 16px;
   vertical-align: middle;
@@ -64,9 +65,9 @@ form input {
   right: 0;
   background-color: #b6e4a5;
   z-index: 1;
-  
-  
-  
+
+
+
 }
 
 li {
@@ -98,14 +99,14 @@ li {
   text-align: right;
   font-size: 14px;
   font-weight: 600;
-  
+
 }
 
 .actions a {
   color: #67b54b;
 }
 
-.actions > * {
+.actions>* {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -117,11 +118,11 @@ li {
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }
 
 
@@ -132,7 +133,7 @@ li {
   padding: 14px 12px;
   border-radius: 5px;
   border-style: none;
-  
+
 }
 
 
@@ -143,7 +144,7 @@ li {
   align-items: center;
   justify-content: center;
   margin: 5rem;
-  
+
 }
 
 .publish {
@@ -155,17 +156,17 @@ li {
   align-self: flex-start;
   line-height: 1.5rem;
 
-  
+
 }
 
-.image_video{
+.image_video {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-self: flex-end;
 }
 
-.image_video img{
+.image_video img {
   width: 5rem;
   margin-top: 10px;
 }
@@ -188,6 +189,7 @@ li {
   text-align: left;
   width: 50%;
 }
+
 .information h1 {
   color: #025157;
   font-size: 3rem;
@@ -219,7 +221,7 @@ li {
   justify-content: center;
   align-items: center;
   font-family: 'Kdam Thmor Pro', sans-serif;
-  
+
 }
 
 .people img {
@@ -251,15 +253,26 @@ li {
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  
+
 }
 
 .circle img {
-  margin:15px auto;
-  display:block;
+  margin: 15px auto;
+  display: block;
 }
 
 .features {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  padding: 5% 10%;
+  background-color: #025157;
+}
+
+.features .features-card {
+  display: flex;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 0 4rem;
+  height: 18rem;
 }
