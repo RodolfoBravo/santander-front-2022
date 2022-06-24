@@ -15,31 +15,12 @@
 </head>
 
 <body>
-    <!-- <section class="fixed_header">
-        <header class="header">
-            <a href="#" class="logo">
-                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="">
-            </a>
-            <nav class="navbar">
-                <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <div class="actions">
-                <a href="#">Sing in</a>
-                <button>Start free trial</button>
-            </div>
-        </header> 
-    </section> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid custom-toggler">
             <a class="navbar-brand logo" href="#">
-                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt=""></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Platform</a>
+                        <a class="nav-link" href="#">Platform</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
@@ -63,12 +44,20 @@
                     </li>
 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div class="row d-flex justify-content-end">
+                    <div class="col-xs-12 col-xl-7">
+                        <form>
+                            <button class="btn btn-outline-success me-2" type="submit">Sing In</button>
+                            <button class="btn btn-success" type="submit">Start free trial</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
+
     </nav>
 
     <section class="main">
@@ -112,38 +101,12 @@
                 hours to create content that may or may not work. With Matcha, instantly publish from our library of
                 10,000+ professionally written articles and build your email list faster with our powerful conversion
                 tool.</p>
-            <form action="">
+            <form>
                 <input type="email">
                 <button type="submit">
                     Try it now &rarr;
                 </button>
             </form>
-        </article>
-
-    </section>
-
-    <br><br>
-
-    <section class="testimony">
-        <article class="information">
-            <h1>Growing ecommerce brands rely on Matcha. </h1>
-            <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on
-                sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content
-                and
-                consistent performance from their blogs.</p>
-            <button class="test-btn">Who use Matcha?</button>
-            <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="" width="50%">
-        </article>
-
-        <article class="people">
-            <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="" width="100%">
-            <div class="circle"><img
-                    src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt=""
-                    height="60%" width="60%"></div>
-            <h3>Everly</h3>
-            <p>Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%</p>
-
-            <button class="test-btn">Who use Matcha?</button>
         </article>
 
     </section>
@@ -210,6 +173,30 @@
                 </figure>
             </div>
         </article>
+    </section>
+
+    <section class="testimony">
+        <article class="information">
+            <h1>Growing ecommerce brands rely on Matcha. </h1>
+            <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on
+                sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content
+                and
+                consistent performance from their blogs.</p>
+            <button class="test-btn">Who use Matcha?</button>
+            <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="" width="50%">
+        </article>
+
+        <article class="people">
+            <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="" width="100%">
+            <div class="circle"><img
+                    src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt=""
+                    height="60%" width="60%"></div>
+            <h3>Everly</h3>
+            <p>Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%</p>
+
+            <button class="test-btn">Who use Matcha?</button>
+        </article>
+
     </section>
 
     <section class="how-work">
@@ -286,7 +273,9 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 
