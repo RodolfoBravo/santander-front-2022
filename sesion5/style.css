@@ -48,14 +48,18 @@ form input {
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.header {
-  margin-top: 40px 20px 0;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
   font-size: 0;
   height: 45px;
+  background-color: #b6e4a5;
+
 
 }
 
-.header>* {
+nav>* {
   display: inline-block;
   font-size: 16px;
   vertical-align: middle;
@@ -75,7 +79,7 @@ form input {
 
 }
 
-li {
+.nav-item {
   display: inline;
   margin: 0 15px;
   color: #025157;
@@ -83,20 +87,20 @@ li {
   font-family: 'Fascinate', cursive;
 }
 
-.logo>img {
-  width: 15%;
+.logo {
+  margin-right: 1rem;
 }
 
-.logo {
-  width: 15%;
+.logo img {
+  width: 35px;
+  height: 35px;
 }
 
 .navbar {
   width: 70%;
   text-align: center;
   color: #025157;
-  font-weight: 500;
-  font-family: sans-serif;
+
 }
 
 .actions {
@@ -104,8 +108,8 @@ li {
   text-align: right;
   font-size: 14px;
   font-weight: 600;
-  
-  
+
+
 
 }
 
@@ -115,6 +119,7 @@ li {
   text-decoration: none;
   margin-right: 5px;
 }
+
 .actions button {
   font-family: 'Kdam Thmor Pro', sans-serif;
 
@@ -326,7 +331,7 @@ li {
   text-decoration: none;
 }
 
-.features .features-card .features-image {
+.features .features-card .features-img {
   flex: 1;
   width: 100%;
   position: relative;
@@ -350,11 +355,12 @@ li {
 .how-work a {
   color: #67b54b;
   text-decoration: none;
-  
+
 }
+
 .how-work h1 {
   color: #025157;
-  
+
 }
 
 
@@ -367,7 +373,7 @@ li {
   height: 3rem;
   border: 1px solid #e9f4f5;
   border-radius: 10px;
-  
+
 }
 
 .how-work .steps {
@@ -388,39 +394,205 @@ li {
 }
 
 .how-work .card-step:hover {
-  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
 }
 
-.how-work .card-step .card-step-img img{
+.how-work .card-step .card-step-img img {
   width: 100%;
   height: 250px;
 }
 
 .how-work .card-step .card-step-content {
   padding: 25px;
-  
+
 }
-.how-work .card-step .card-step-content h3{
+
+.how-work .card-step .card-step-content h3 {
   text-align: center;
   color: #025157;
-  
+
 }
+
 .how-work .card-step .card-step-content p {
   text-align: start;
   margin-bottom: 1rem;
-  
+
 }
 
 .how-work .card-step .card-step-content a {
   color: #67b54b;
   text-decoration: none;
   align-self: flex-end;
-  font-family: 'Kdam Thmor Pro', sans-serif; 
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .otherInformation {
   display: flex;
   justify-content: center;
   margin: 50px 0;
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  .main {
+    margin-top: 4.5rem;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner>img {
+    width: 100%;
+  }
+
+  .main>form {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main>form>input {
+    margin-bottom: 5px;
+    border-radius: 2px;
+
+  }
+
+  .main>form>button {
+    margin-bottom: 5px;
+    border-radius: 2px;
+
+  }
+
+  .publish>form {
+    flex-direction: column;
+  }
+
+  .publish>form>div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish>form>div>input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+    justify-items: center;
+  }
+
+  .promo>.image_video>video {
+    width: 90%;
+  }
+
+  .publish {
+    margin-top: 1rem;
+  }
+
+  .publish>h1 {
+    font-size: 25px;
+    line-height: 1.2rem;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    justify-items: center;
+    padding: 0;
+
+  }
+
+  .features .features-card {
+    margin: 30px;
+    border-radius: 5px;
+    height: 90%;
+    padding: 5px;
+  }
+
+  .features-img {
+    display: none;
+  }
+
+  .how-work>.steps {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    justify-items: center;
+    margin: 0;
+  }
+
+  .features .features-card .features-content {
+    padding: 0;
+    flex: 1;
+  }
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px and max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px and max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px and max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
