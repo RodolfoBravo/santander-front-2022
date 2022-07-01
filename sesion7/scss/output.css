@@ -3,13 +3,21 @@ Fuentes o typografias
 */
 .title {
   font-family: "Fascinate", cursive;
-  color: #1a43d4;
+  color: #1b1c20;
 }
 
 .blog {
-  background-color: #a6f8ff;
+  background-color: #e6e6e6;
   max-width: unset;
   padding: 5% 10%;
+}
+
+.process-description h3 {
+  text-align: center;
+}
+
+.process {
+  flex-direction: row;
 }
 
 .process-list {
@@ -26,7 +34,7 @@ Fuentes o typografias
   font-weight: 500;
 }
 .process-list .process > div > p {
-  color: #1a43d4;
+  color: #1b1c20;
   margin: 0;
 }
 .process-list .process .process-icon {
@@ -42,9 +50,19 @@ Fuentes o typografias
 button {
   width: 180px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 12px;
   margin-bottom: 15px;
+  background-color: #025157;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.card .category {
+  color: #67b54b;
+}
+.card .card-body .author p {
+  text-align: start;
 }
 
 /*# sourceMappingURL=output.css.map */
