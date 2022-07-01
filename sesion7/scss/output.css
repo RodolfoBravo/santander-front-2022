@@ -1,0 +1,50 @@
+/**
+Fuentes o typografias
+*/
+.title {
+  font-family: "Fascinate", cursive;
+  color: #1a43d4;
+}
+
+.blog {
+  background-color: #a6f8ff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+
+.process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.process-list .process {
+  margin-bottom: 25px;
+}
+.process-list .process > div > h1 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.process-list .process > div > p {
+  color: #1a43d4;
+  margin: 0;
+}
+.process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.process-list .process .process-icon img {
+  height: 100%;
+}
+
+button {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=output.css.map */

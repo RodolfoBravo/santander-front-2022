@@ -1,0 +1,54 @@
+//Import of file _global.scss
+@use 'global' as *;
+
+.blog {
+    background-color: #a6f8ff;
+    max-width: unset;
+    padding: 5% 10%;
+  }
+
+.title {
+    @extend %base-title;
+}
+
+.process-list {
+    margin-top: 40px;
+    margin-bottom: 36px;
+    .process{
+        margin-bottom: 25px;
+
+        & > div {
+            & > h1 {
+                color: $dark-green-title;
+                margin-bottom: 0;
+                font-size: 3rem;
+                font-weight: 500;
+            }
+            & > p {
+                color: $dark-green-text;
+                margin: 0;
+            }
+        }
+
+        .process-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            text-align: center;
+
+            img {
+                height: 100%;
+            }
+        
+        }
+
+    }
+}
+
+button {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+}

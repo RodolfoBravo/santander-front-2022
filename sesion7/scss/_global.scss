@@ -1,0 +1,17 @@
+//_global.scss
+
+// Colors of web site
+$dark-green-title: #025157;
+$dark-green-text:  #1a43d4;
+$white: #fff;
+
+/**
+Fuentes o typografias
+*/
+
+$font-title: 'Fascinate', cursive;
+
+%base-title {
+    font-family: $font-title;
+    color: $dark-green-text;
+}
