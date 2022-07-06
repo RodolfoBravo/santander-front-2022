@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffbf7;
+  }
+  
+  
+  nav {
+    font-size: 500;
+    height: 75px;
+    width: 100%;
+    background-color: #b6e4a5;
+    display: flex;
+    justify-content: space-between;
+  
+  
+  }
+  
+  
+  
+  .nav-item {
+    display: inline;
+    margin: 0 15px;
+    color: #35d5e0;
+    font-size: 1.5rem;
+    font-family: 'Fascinate', cursive;
+  }
+  
+  .nav-item>.nav-link {
+    color: #000000;
+  }
+  .nav-item>.nav-link:hover {
+    color: #198754;
+  }
+  
+   .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(10, 87, 8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler .navbar-toggler {
+    border-color: rgb(4, 17, 3);
+  } 
+  
+  .logo {
+    margin-right: 1rem;
+  }
+  
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  main {
+    text-align: center
+  }

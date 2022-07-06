@@ -1,0 +1,211 @@
+body {
+  background-color: #fffbf7;
+}
+
+
+nav {
+  font-size: 500;
+  height: 75px;
+  width: 100%;
+  background-color: #b6e4a5;
+  display: block;
+  justify-content: space-between;
+
+}
+
+
+
+.logo {
+  margin-right: 1rem;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.card-body {
+  text-decoration: none;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+
+}
+.card-title:hover {
+  color: #b6e4a5;
+  animation-name: miAnimation;
+  animation-duration: 5s;
+}
+
+@keyframes miAnimation {
+  0% {}
+  50% {font-size: 1.7rem;}
+  100% {font-size: 2rem;}
+}
+
+.flecha {
+  width: 170px;
+  height: 150px;
+  
+
+}
+.flecha-container {
+  height: 300px;
+  position: relative;
+  top:0px;
+  animation-name: flecha-mov;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flecha-mov {
+  0% {top:0; right:0px;}
+  10% {top:0; right: 500px;}
+  25%{top:50px; right: 250px;}
+  50%{top:100px; right: 0;}
+  75%{top:50px;right: -250px;}
+  90%{top:0px;right: -500px;}
+  100% {top: 0; right: 0;}
+}
+p {
+  color: center;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  .main {
+    margin-top: 4.5rem;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner>img {
+    width: 100%;
+  }
+
+  .main>form {
+    margin-bottom: 1rem;
+  }
+
+  .main>form>input{
+    width: 50%;
+
+  }
+
+  .main>form>button {
+    width: 50%;
+
+  }
+
+  .publish>form {
+    margin-bottom: 1rem;
+  }
+
+
+  .publish>form>input {
+    width: 50%;
+  }
+  .publish>form>button {
+    width: 50%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+    justify-items: center;
+    margin: 0 1rem;
+  }
+
+  .promo>.image_video>video {
+    width: 90%;
+  }
+
+  .publish {
+    margin-top: 1rem;
+  }
+
+  .publish>h1 {
+    font-size: 25px;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    justify-items: center;
+    padding: 0;
+
+  }
+
+  .features .features-card {
+    margin: 30px;
+    border-radius: 5px;
+    height: 90%;
+    padding: 5px;
+  }
+
+  .features-img {
+    display: none;
+  }
+
+  .testimony {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+  
+  }
+
+  .how-work>button {
+    margin-bottom: 1rem;
+  }
+  .how-work>.steps {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    row-gap: 1rem;
+    justify-items: center;
+    margin: 0;
+  }
+
+  .how-work>.steps>.card-step {
+    padding: 10px;
+  }
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
+

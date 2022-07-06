@@ -1,0 +1,68 @@
+/**
+Fuentes o typografias
+*/
+.title {
+  font-family: "Fascinate", cursive;
+  color: #1b1c20;
+}
+
+.blog {
+  background-color: #e6e6e6;
+  max-width: unset;
+  padding: 5% 10%;
+}
+
+.process-description h3 {
+  text-align: center;
+}
+
+.process {
+  flex-direction: row;
+}
+
+.process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.process-list .process {
+  margin-bottom: 25px;
+}
+.process-list .process > div > h1 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.process-list .process > div > p {
+  color: #1b1c20;
+  margin: 0;
+}
+.process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.process-list .process .process-icon img {
+  height: 100%;
+}
+
+button {
+  width: 180px;
+  height: auto;
+  border-radius: 20px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #025157;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.card .category {
+  color: #67b54b;
+}
+.card .card-body .author p {
+  text-align: start;
+}
+
+/*# sourceMappingURL=output.css.map */
